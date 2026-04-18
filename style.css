@@ -1,0 +1,129 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b40);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 420px;
+  background: #2a2a3c;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+header {
+  background: #1f1f2e;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+header h2 {
+  margin: 0;
+  color: #00d4ff;
+}
+
+#setup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+#setup input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+#joinBtn {
+  background: #00d4ff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: #111;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#joinBtn:hover {
+  background: #00bce3;
+}
+
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+#messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msg {
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14px;
+}
+
+.msg.you {
+  background: #00d4ff;
+  color: black;
+  align-self: flex-end;
+}
+
+.msg.other {
+  background: #3a3a4d;
+  align-self: flex-start;
+}
+
+.encText {
+  font-size: 11px;
+  color: #ccc;
+}
+
+#inputArea {
+  display: flex;
+  padding: 10px;
+  background: #1f1f2e;
+  border-top: 1px solid #444;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+#sendBtn {
+  background: #00d4ff;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #111;
+}
+.hidden {
+  display: none;
+}

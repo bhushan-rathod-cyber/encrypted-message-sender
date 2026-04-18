@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔐 Encrypted–Decrypted Message Sender</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h2>🔐 Encrypted–Decrypted Message Sender</h2>
+      <p id="roomInfo">Waiting for connection...</p>
+    </header>
+
+    <div id="setup">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <input type="text" id="secretKey" placeholder="Enter shared secret key" />
+      <button id="joinBtn">Join Chat</button>
+    </div>
+
+    <div id="chatContainer" class="hidden">
+      <div id="messages"></div>
+      <div id="inputArea">
+        <input type="text" id="messageInput" placeholder="Type a message..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
